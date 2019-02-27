@@ -2,7 +2,7 @@ package pl.edu.agh.mwo.fizzbuzz;
 
 public class FizzBuzz {
 	
-	public boolean isMultiple(int number, int... multiples) {
+	boolean isMultipleOf(int number, int... multiples) {
 		for (int multiple : multiples) {
 			if (number % multiple != 0)
 				return false;
@@ -11,11 +11,11 @@ public class FizzBuzz {
 	}
 	
 	public String getLine(int number) {
-		if (this.isMultiple(number, 3, 5)) {
+		if (this.isMultipleOf(number, 3, 5)) {
 			return "FizzBuzz";
-		} else if (this.isMultiple(number, 3)) {
+		} else if (this.isMultipleOf(number, 3)) {
 			return "Fizz";
-		} else if (this.isMultiple(number, 5)) {
+		} else if (this.isMultipleOf(number, 5)) {
 			return "Buzz";
 		}
 		return String.valueOf(number);

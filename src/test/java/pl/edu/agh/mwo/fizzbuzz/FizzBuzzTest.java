@@ -14,26 +14,26 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void testIsMultipleOfThree() {
-		Assert.assertTrue(fizzbuzz.isMultiple(9, 3));
-		Assert.assertTrue(fizzbuzz.isMultiple(12, 3));
-		Assert.assertTrue(fizzbuzz.isMultiple(21, 3));
-		Assert.assertFalse(fizzbuzz.isMultiple(20, 3));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(9, 3));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(12, 3));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(21, 3));
+		Assert.assertFalse(fizzbuzz.isMultipleOf(20, 3));
 	}
 	
 	@Test
 	public void testIsMultipleOfFive() {
-		Assert.assertTrue(fizzbuzz.isMultiple(5, 5));
-		Assert.assertTrue(fizzbuzz.isMultiple(15, 5));
-		Assert.assertTrue(fizzbuzz.isMultiple(30, 5));
-		Assert.assertFalse(fizzbuzz.isMultiple(14, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(5, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(15, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(30, 5));
+		Assert.assertFalse(fizzbuzz.isMultipleOf(14, 5));
 	}
 
 	@Test
 	public void testIsMultipleOfThreeAndFive() {
-		Assert.assertTrue(fizzbuzz.isMultiple(15, 3, 5));
-		Assert.assertTrue(fizzbuzz.isMultiple(30, 3, 5));
-		Assert.assertTrue(fizzbuzz.isMultiple(45, 3, 5));
-		Assert.assertFalse(fizzbuzz.isMultiple(43, 3, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(15, 3, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(30, 3, 5));
+		Assert.assertTrue(fizzbuzz.isMultipleOf(45, 3, 5));
+		Assert.assertFalse(fizzbuzz.isMultipleOf(43, 3, 5));
 	}
 	
 	@Test
